@@ -8,9 +8,45 @@
         <!--Interface Controller-->
         <scene sceneID="aou-V4-d1y">
             <objects>
-                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModuleProvider=""/>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController">
+                    <items>
+                        <table alignment="left" layout="vertical" id="vOk-J8-C45">
+                            <items>
+                                <tableRow identifier="row" id="DJg-kz-dfq" customClass="MyRowController">
+                                    <group key="rootItem" width="1" alignment="left" id="Y8m-dd-9zg">
+                                        <items>
+                                            <imageView width="54" height="36" alignment="left" image="gato" id="IyR-Zb-Ldh"/>
+                                            <button width="79" height="40" alignment="left" title="Button" id="Nzt-Pi-9mm"/>
+                                        </items>
+                                        <connections>
+                                            <segue destination="7kJ-WE-5qi" kind="push" id="eB3-vP-jXo"/>
+                                        </connections>
+                                    </group>
+                                    <connections>
+                                        <outlet property="myButton" destination="Nzt-Pi-9mm" id="263-Ph-uUH"/>
+                                        <outlet property="myImage" destination="IyR-Zb-Ldh" id="fTa-0f-pKg"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                    </items>
+                    <connections>
+                        <outlet property="tableView" destination="vOk-J8-C45" id="OYy-vp-BaB"/>
+                    </connections>
+                </controller>
             </objects>
-            <point key="canvasLocation" x="220" y="345"/>
+            <point key="canvasLocation" x="220" y="346"/>
+        </scene>
+        <!--Interface Controller-->
+        <scene sceneID="Kdx-zI-RS4">
+            <objects>
+                <controller id="7kJ-WE-5qi">
+                    <items>
+                        <imageView alignment="left" image="gato" id="CPK-rT-zhN"/>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="396" y="350"/>
         </scene>
         <!--Static Notification Interface Controller-->
         <scene sceneID="AEw-b0-oYE">
@@ -31,7 +67,7 @@
         <!--Notification Controller-->
         <scene sceneID="ZPc-GJ-vnh">
             <objects>
-                <controller id="4sK-HA-Art" customClass="NotificationController" customModuleProvider=""/>
+                <controller id="4sK-HA-Art" customClass="NotificationController"/>
             </objects>
             <point key="canvasLocation" x="468" y="643"/>
         </scene>

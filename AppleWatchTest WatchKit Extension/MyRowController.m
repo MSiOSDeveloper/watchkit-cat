@@ -9,5 +9,6 @@
 #import "MyRowController.h"
 
 @implementation MyRowController
-
+@synthesize myButton;
+@synthesize myImage;
 @end
